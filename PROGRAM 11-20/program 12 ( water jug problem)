@@ -2,6 +2,12 @@ from collections import deque
 
 
 def BFS(a, b, target):
+
+	# Map is used to store the states, every
+	# state is hashed to binary value to
+	# indicate either that state is visited
+	# before or not
+	m = {}
 	isSolvable = False
 	path = []
 
